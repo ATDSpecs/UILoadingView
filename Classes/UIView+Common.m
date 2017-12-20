@@ -37,9 +37,6 @@ static char LoadingViewKey;
     }
     [self addSubview:self.loadingView];
 
-   // [self.loadingView mas_makeConstraints:^(MASConstraintMaker *make) {
-      //  make.self.edges.equalTo(self);
-    //}];
     [self.loadingView startAnimating];
 }
 
@@ -71,12 +68,6 @@ static char LoadingViewKey;
         [_monkeyView setCenter:self.center];
         [self addSubview:_loopView];
         [self addSubview:_monkeyView];
-//        [_loopView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.center.equalTo(self);
-//        }];
-//        [_monkeyView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.center.equalTo(self);
-//        }];
         
         _loopAngle = 0.0;
         _monkeyAlpha = 1.0;
